@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import {CommonModule} from '@angular/common';
 
-import { AppComponent } from './app.component';
-import { ProjectPanelComponent } from './project-panel/project-panel.component';
-import { ProjectSliderComponent } from './project-slider/project-slider.component';
+import {AppComponent} from './app.component';
+import {ProjectPanelComponent} from './project-panel/project-panel.component';
+import {ProjectSliderComponent} from './project-slider/project-slider.component';
 
 @NgModule({
   declarations: [
@@ -19,4 +19,5 @@ import { ProjectSliderComponent } from './project-slider/project-slider.componen
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

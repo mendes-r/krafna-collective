@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Project} from "./project";
 
 @Component({
   selector: 'app-root',
@@ -6,11 +7,47 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  projects: string[] = [
-    'project 01',
-    'project 02',
-    'project 03',
-    'project 04',
-    'project 05'
-  ];
+
+  portfolio: Project[] = [
+    {
+    id: 1,
+    name: "Casa Chã",
+    thumbnailUrl: "",
+    leftImagesUrl: [""],
+    rightImagesUrl: [""],
+    description:"Oliveira de Azemeis"
+    },
+    {
+      id: 1,
+      name: "Belmont",
+      thumbnailUrl: "",
+      leftImagesUrl: [""],
+      rightImagesUrl: [""],
+      description:"Porto"
+    },
+    {
+      id: 1,
+      name: "Ceuta",
+      thumbnailUrl: "",
+      leftImagesUrl: [""],
+      rightImagesUrl: [""],
+      description:"Porto"
+    },
+    {
+      id: 1,
+      name: "Detroit",
+      thumbnailUrl: "",
+      leftImagesUrl: [""],
+      rightImagesUrl: [""],
+      description:"Detroit"
+    },
+    {
+      id: 1,
+      name: "Quinta Nova",
+      thumbnailUrl: "",
+      leftImagesUrl: [""],
+      rightImagesUrl: [""],
+      description:"Oliveira de Azemeis"
+    },
+  ]
 }

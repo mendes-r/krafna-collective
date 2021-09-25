@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { ProjectPanelComponent } from './project-panel/project-panel.component';
+import { ProjectSliderComponent } from './project-slider/project-slider.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectPanelComponent,
+    ProjectSliderComponent,
   ],
   imports: [
     BrowserModule

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'krafna-collective';
+  projects: string[] = [
+    'project 01',
+    'project 02',
+    'project 03',
+    'project 04',
+    'project 05'
+  ];
 }

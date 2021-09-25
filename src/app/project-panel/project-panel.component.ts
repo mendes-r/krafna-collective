@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-project-panel',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-panel.component.css']
 })
 export class ProjectPanelComponent implements OnInit {
+
+  @Input() name: string = 'Error';
 
   constructor() { }
 

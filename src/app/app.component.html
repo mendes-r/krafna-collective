@@ -1,3 +1,5 @@
 <div class="wrapper">
-  <app-project-panel></app-project-panel>
+  <div *ngFor = "let project of projects">
+    <app-project-panel [name]="project"></app-project-panel>
+  </div>
 </div>

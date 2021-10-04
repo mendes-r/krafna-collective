@@ -1,8 +1,34 @@
-.wrapper{
-  background-color: burlywood;
-  width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
+#frame-t, #frame-r, #frame-b, #frame-l {
+  position: fixed;
+  text-align: center;
+  background-color: yellow;
+
+}
+
+#frame-t {
+  top: 0;
+  left: 50%;
+  width: var(--frame-with);
+  margin-left: var(--half-frame-with);
+}
+
+#frame-r {
+  right: var(--half-frame-with);
+  top: 50%;
+  width: var(--frame-with);
+  transform: rotate(90deg);
+}
+
+#frame-b {
+  bottom: 0;
+  left: 50%;
+  width: var(--frame-with);
+  margin-left: var(--half-frame-with);
+}
+
+#frame-l {
+  left: var(--half-frame-with);
+  top: 50%;
+  width: var(--frame-with);
+  transform: rotate(270deg);
 }

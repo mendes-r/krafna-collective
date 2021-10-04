@@ -1,0 +1,10 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.contact p {
+  text-align: center;
+}

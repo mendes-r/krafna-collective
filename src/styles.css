@@ -1,5 +1,5 @@
 body{
-  background-color: #fff;
+  background-color: var(--backgroud-color);
   height: 100%;
   width: 100%;
   margin: 0;
@@ -11,4 +11,8 @@ body{
 :root {
   --frame-with: 250px;
   --frame-margin: 20px;
+  --font-color: black;
+  --backgroud-color: rgb(232,234,234);
 }
+
+

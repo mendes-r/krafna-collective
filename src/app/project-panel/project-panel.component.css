@@ -1,4 +1,8 @@
 .panel{
-  background-color: aliceblue;
   height: 600px;
+  margin-top: 5px;
+}
+
+.panel img {
+  width: 100%;
 }

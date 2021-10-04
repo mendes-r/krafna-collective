@@ -1,5 +1,5 @@
 body{
-  background-color: brown;
+  background-color: #fff;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -10,5 +10,5 @@ body{
 
 :root {
   --frame-with: 250px;
-  --half-frame-with: -125px;
+  --frame-margin: 20px;
 }

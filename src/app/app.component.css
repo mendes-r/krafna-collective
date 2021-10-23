@@ -4,7 +4,11 @@
   margin-bottom: calc(var(--frame-margin) + 150px);
 }
 
-#frame-t, #frame-r, #frame-b, #frame-l, #social {
+#frame-t,
+#frame-r,
+#frame-b,
+#frame-l,
+#social {
   position: fixed;
   text-align: center;
   font-family: sans-serif;
@@ -17,7 +21,8 @@
   right: var(--frame-margin);
 }
 
-a, a:active {
+a,
+a:active {
   text-decoration: none;
   color: var(--font-color);
 }
@@ -49,4 +54,3 @@ a, a:active {
   width: var(--frame-with);
   transform: rotate(270deg);
 }
-

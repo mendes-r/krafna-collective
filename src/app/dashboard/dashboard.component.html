@@ -1,5 +1,9 @@
 <div class="wrapper">
   <div *ngFor="let project of portfolio">
-    <app-project-panel [project]="project"></app-project-panel>
+    <app-project-panel
+      (emitName)="setHoverProject($event)"
+      [project]="project"
+    ></app-project-panel>
   </div>
+  <div id="hover-text">{{ hoverProject }}</div>
 </div>

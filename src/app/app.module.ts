@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactComponent } from './frame-links/contact/contact.component';
 import { ClientComponent } from './frame-links/client/client.component';
 import { NewsComponent } from './frame-links/news/news.component';
+import { ProjectService } from './service/project.service'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { NewsComponent } from './frame-links/news/news.component';
     CommonModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

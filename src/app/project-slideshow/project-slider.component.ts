@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './project-slider.component.html',
   styleUrls: ['./project-slider.component.css']
 })
-export class ProjectSliderComponent implements OnInit {
+export class ProjectSliderComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

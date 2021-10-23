@@ -1,3 +1,4 @@
+import { ProjectSliderComponent } from './project-slideshow/project-slider.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,6 +12,8 @@ const routes: Routes = [
   { path: 'client', component: ClientComponent },
   { path: 'news', component: NewsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'project/:id', component: ProjectSliderComponent},
+  { path: '**', component: DashboardComponent},
 ];
 
 @NgModule({

@@ -1,3 +1,5 @@
 <div (mouseenter)="sendName()" (mouseleave)="sendNothing()" class="panel">
-  <img src="{{ project.thumbnailUrl }}" />
+  <a [routerLink]="['/project', project.id]">
+    <img src="{{ project.thumbnailUrl }}" />
+  </a>
 </div>

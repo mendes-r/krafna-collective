@@ -15,9 +15,7 @@ export class ProjectSliderComponent implements OnInit {
   constructor(private route: ActivatedRoute, private _service: ProjectService) {}
 
   ngOnInit(): void {
-    let temp: any;
-    this.route.paramMap.subscribe((param) => temp=param.get('id'));
-    this.id = temp || {};
+    this.route.paramMap.subscribe((param) => this.id=param.get('id') || '');
     this.project = this._service.getProject(this.id);
   }
 }

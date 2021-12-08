@@ -7,8 +7,8 @@
 SOURCE='./images/'
 SLIDE='/slide/'
 JSON="./projects.json"
-PROJECTS=($(ls $SOURCE))
-
+# All project's folders
+PROJECTS=($(ls -d $SOURCE))
 # https://stackoverflow.com/questions/12298261/how-to-know-if-file-in-a-loop-is-the-last-one
 PROJECT_LENGTH=$(( ${#PROJECTS[*]} - 1 ))
 LAST_PROJECT=${PROJECTS[$PROJECT_LENGTH]}
@@ -29,10 +29,12 @@ if [ -f $JSON ]; then
 fi
 
 echo '[' >> $JSON
+
 for project in "${PROJECTS[@]}"
 do
   projects $project
 
+	# All images inside the folder "slide"
 	SLIDES=($(find $SOURCE$project$SLIDE -type f -depth 1 -name '*.jpg' -o -name '*.png'))
 	SLIDES_LENGTH=$(( ${#SLIDES[*]} - 1 ))
 	LAST_SLIDE=${SLIDES[$SLIDES_LENGTH]}

@@ -1,8 +1,8 @@
 export interface Project {
-  id: number;
+  id: string;
   name: string;
-  thumbnailUrl: string;
-  leftImagesUrl: string[];
-  rightImagesUrl: string[];
   description: string;
+  thumbnail: string;
+  left_slides: string[];
+  right_slides: string[];
 }

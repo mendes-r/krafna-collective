@@ -1,87 +1,114 @@
 [
   {
+    "id": "01",
     "name": "casa-cha",
-    "id": 1,
-    "thumbnail": "./images/1-casa-cha/krafna-architects-cha.jpg",
-    "slideshow": [
-      ./images/1-casa-cha/slide//krafna_cha_02.jpg,
-      ./images/1-casa-cha/slide//krafna_cha_01.jpg,
-      ./images/1-casa-cha/slide//krafna_cha_00.jpg
+    "description": "Casa Chã, Oliveira de Azeméis",
+    "thumbnail": "assets/images/01-casa-cha/krafna-architects-cha.jpg",
+    "left_slides": [
+      "assets/images/01-casa-cha/slideshow/left/krafna_cha_01.jpg",
+      "assets/images/01-casa-cha/slideshow/left/krafna_cha_00.jpg"
+    ],
+    "right_slides": [
+      "assets/images/01-casa-cha/slideshow/right/krafna_cha_02.jpg"
     ]
   },
   {
+    "id": "02",
     "name": "belmonte",
-    "id": 2,
-    "thumbnail": "./images/2-belmonte/krafna-architects-belmonte.jpg",
-    "slideshow": [
-      ./images/2-belmonte/slide//krafna_belmonte_plt.png,
-      ./images/2-belmonte/slide//krafna_belmonte_01.jpg
+    "description": "Belmonte, Porto",
+    "thumbnail": "assets/images/02-belmonte/krafna-architects-belmonte.jpg",
+    "left_slides": [
+      "assets/images/02-belmonte/slideshow/left/krafna_belmonte_01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/02-belmonte/slideshow/right/krafna_belmonte_plt.png"
     ]
   },
   {
+    "id": "03",
     "name": "botschaft",
-    "id": 3,
-    "thumbnail": "./images/3-botschaft/krafna-architects-botschaft.jpg",
-    "slideshow": [
-      ./images/3-botschaft/slide//krafna_botschaft_02.jpg,
-      ./images/3-botschaft/slide//krafna_botschaft_01.jpg
+    "description": "Botshaft, Berlin",
+    "thumbnail": "assets/images/03-botschaft/krafna-architects-botschaft.jpg",
+    "left_slides": [
+      "assets/images/03-botschaft/slideshow/left/krafna_botschaft_01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/03-botschaft/slideshow/right/krafna_botschaft_02.jpg"
     ]
   },
   {
+    "id": "04",
     "name": "detroit",
-    "id": 4,
-    "thumbnail": "./images/4-detroit/krafna-architects-detroit.jpg",
-    "slideshow": [
-      ./images/4-detroit/slide//krafna_detroit_01.jpg,
-      ./images/4-detroit/slide//krafna_detroit_02.jpg
+    "description": "Detroit Competition",
+    "thumbnail": "assets/images/04-detroit/krafna-architects-detroit.jpg",
+    "left_slides": [
+      "assets/images/04-detroit/slideshow/left/krafna_detroit_01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/04-detroit/slideshow/right/krafna_detroit_02.jpg"
     ]
   },
   {
+    "id": "05",
     "name": "constituicao",
-    "id": 5,
-    "thumbnail": "./images/5-constituicao/krafna-architects-constituicao.jpg",
-    "slideshow": [
-      ./images/5-constituicao/slide//krafna_constituicao_01.jpg,
-      ./images/5-constituicao/slide//krafna_constituicao_02.jpg
+    "description": "Apartamento na Rua da Constituição, Porto",
+    "thumbnail": "assets/images/05-constituicao/krafna-architects-constituicao.jpg",
+    "left_slides": [
+      "assets/images/05-constituicao/slideshow/left/krafna_constituicao_01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/05-constituicao/slideshow/right/krafna_constituicao_02.jpg"
     ]
   },
   {
+    "id": "06",
     "name": "melro",
-    "id": 6,
-    "thumbnail": "./images/6-melro/slide/krafna_melro_plt.png",
-    "slideshow": [
-      ./images/6-melro/slide//krafna_melro_03.jpg,
-      ./images/6-melro/slide//krafna_melro_02.jpg,
-      ./images/6-melro/slide//krafna_melro_01.jpg,
-      ./images/6-melro/slide//krafna_melro_plt.png
+    "description": "Edifício do Café Melro",
+    "thumbnail": "assets/images/06-melro/slideshow/right/krafna_melro_plt.png",
+    "left_slides": [
+      "assets/images/06-melro/slideshow/left/krafna_melro_02.jpg",
+      "assets/images/06-melro/slideshow/left/krafna_melro_01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/06-melro/slideshow/right/krafna_melro_03.jpg",
+      "assets/images/06-melro/slideshow/right/krafna_melro_plt.png"
     ]
   },
   {
+    "id": "07",
     "name": "casa-a",
-    "id": 7,
-    "thumbnail": "./images/7-casa-a/krafna-architects-casa-a.jpg",
-    "slideshow": [
-      ./images/7-casa-a/slide//krafna_casaa_01.jpg,
-      ./images/7-casa-a/slide//krafna_casaa_02.jpg
+    "description": "Casa A, Oliveira de Azeméis",
+    "thumbnail": "assets/images/07-casa-a/krafna-architects-casa-a.jpg",
+    "left_slides": [
+      "assets/images/07-casa-a/slideshow/left/krafna_casaa_01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/07-casa-a/slideshow/right/krafna_casaa_02.jpg"
     ]
   },
   {
+    "id": "08",
     "name": "ceuta",
-    "id": 8,
-    "thumbnail": "./images/8-ceuta/krafna-architects-ceuta.jpg",
-    "slideshow": [
-      ./images/8-ceuta/slide//krafna_ceuta_01.jpg,
-      ./images/8-ceuta/slide//krafna_ceuta_02.jpg
+    "description": "Apartamento na Rua de Ceuta, Porto",
+    "thumbnail": "assets/images/08-ceuta/krafna-architects-ceuta.jpg",
+    "left_slides": [
+      "assets/images/08-ceuta/slideshow/left/krafna_ceuta_01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/08-ceuta/slideshow/right/krafna_ceuta_02.jpg"
     ]
   },
   {
+    "id": "09",
     "name": "casa-nova",
-    "id": 9,
-    "thumbnail": "./images/9-casa-nova/krafna-architects-casa-nova.jpg",
-    "slideshow": [
-      ./images/9-casa-nova/slide//krafna_nova_01.jpg,
-      ./images/9-casa-nova/slide//krafna_nova_03.jpg,
-      ./images/9-casa-nova/slide//krafna_nova_02.jpg
+    "description": "Casa Nova, Oliveira de Azeméis",
+    "thumbnail": "assets/images/09-casa-nova/krafna-architects-casa-nova.jpg",
+    "left_slides": [
+      "assets/images/09-casa-nova/slideshow/left/krafna_nova_01.jpg",
+      "assets/images/09-casa-nova/slideshow/left/krafna_nova_02.jpg"
+    ],
+    "right_slides": [
+      "assets/images/09-casa-nova/slideshow/right/krafna_nova_03.jpg"
     ]
   }
 ]

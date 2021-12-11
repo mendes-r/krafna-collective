@@ -1,1 +1,15 @@
-<p>project id: {{id}}</p>
+<div class="slide-wrapper">
+  <div class="slides-container" *ngFor="let image_left of project.left_slides">
+    <img
+      class="slide-left"
+      style="width: 100%; display: none"
+      alt="left slide image"
+      src="{{ image_left }}"
+      (click)="showSlides()"
+    />
+  </div>
+
+  <!-- <div class="slide-right" *ngFor="let image_right of project.right_slides">
+    <img style="width: 100%;" alt="left slide image" src="{{ image_right }}" />
+  </div> -->
+</div>

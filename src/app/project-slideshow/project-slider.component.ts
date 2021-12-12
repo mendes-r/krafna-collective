@@ -11,7 +11,8 @@ import { ProjectService } from '../service/project.service';
 export class ProjectSliderComponent implements OnInit, AfterViewInit {
   project!: Project;
   id: string = '';
-  slideIndex: number = 0;
+  slideIndexLeft: number = 0;
+  slideIndexRight: number = 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,25 +25,43 @@ export class ProjectSliderComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.showSlides();
-    console.log("FOO")
+    this.showSlidesLeft();
+    this.showSlidesRight();
   }
 
-  showSlides() {
-    var i;
+  showSlidesLeft() {
     var slides = document.getElementsByClassName(
       'slide-left'
     ) as HTMLCollectionOf<HTMLElement>;
 
-    if (this.slideIndex >= slides.length) {
-      this.slideIndex = 0;
+    this.slideIndexLeft++;
+
+    if (this.slideIndexLeft >= slides.length) {
+      this.slideIndexLeft = 0;
     }
 
+    this.showSlides(slides, this.slideIndexLeft);
+  }
+
+  showSlidesRight() {
+    var slides = document.getElementsByClassName(
+      'slide-right'
+    ) as HTMLCollectionOf<HTMLElement>;
+
+    this.slideIndexRight++;
+
+    if (this.slideIndexRight >= slides.length) {
+      this.slideIndexRight = 0;
+    }
+
+    this.showSlides(slides, this.slideIndexRight);
+  }
+
+  private showSlides(slides: HTMLCollectionOf<HTMLElement>, index: number) {
+    var i;
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     }
-
-    slides[this.slideIndex].style.display = 'block';
-    this.slideIndex++;
+    slides[index].style.display = 'block';
   }
 }

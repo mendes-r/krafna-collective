@@ -25,5 +25,4 @@ export class DashboardComponent implements OnInit {
   setHoverProject(name: string) {
     this.hoverProject = name;
   }
-
 }

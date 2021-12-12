@@ -1,11 +1,12 @@
 .slide-wrapper {
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
 }
 
 .slides-container {
   width: 100%;
+  margin-top: 15px;
 }
 
 .s-left {

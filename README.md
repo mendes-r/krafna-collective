@@ -6,6 +6,7 @@ A website for the architecture practice [Krafna Collective](http://krafna.pt).
 
 - Update the existent website;
 - Enable Https connection;
+- Mobile adaptive;
 - More easily to maintain; 
 - Facilitate adding new projects to the portfolio.
 

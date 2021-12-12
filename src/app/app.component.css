@@ -1,7 +1,15 @@
 .app-wrapper {
-  margin: var(--frame-margin);
-  margin-top: calc(var(--frame-margin) + 100px);
-  margin-bottom: calc(var(--frame-margin) + 150px);
+  width: 65vw;
+  min-width: 700px;
+  margin: auto;
+  margin-top: calc(var(--frame-margin) + 50px);
+}
+
+h6 {
+  margin: 0;
+  font-size: small;
+  font-weight: 100;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #frame-t,
@@ -12,7 +20,7 @@
   position: fixed;
   text-align: center;
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
 }
 

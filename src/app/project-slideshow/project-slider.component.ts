@@ -1,5 +1,5 @@
 import { Project } from './../entity/project';
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../service/project.service';
 
@@ -13,10 +13,15 @@ export class ProjectSliderComponent implements OnInit, AfterViewInit {
   id: string = '';
   slideIndexLeft: number = 0;
   slideIndexRight: number = 0;
+  slideLeftSize!: number;
+  slideRightSize!: number;
+  currentSlideLeft!: number;
+  currentSlideRight!: number;
 
   constructor(
     private route: ActivatedRoute,
-    private _service: ProjectService
+    private _service: ProjectService,
+    private ref: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -27,6 +32,7 @@ export class ProjectSliderComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     this.showSlidesLeft();
     this.showSlidesRight();
+    this.ref.detectChanges();
   }
 
   showSlidesLeft() {
@@ -35,6 +41,9 @@ export class ProjectSliderComponent implements OnInit, AfterViewInit {
     ) as HTMLCollectionOf<HTMLElement>;
 
     this.slideIndexLeft++;
+
+    this.slideLeftSize = slides.length;
+    this.currentSlideLeft = this.slideIndexLeft;
 
     if (this.slideIndexLeft >= slides.length) {
       this.slideIndexLeft = 0;
@@ -49,6 +58,9 @@ export class ProjectSliderComponent implements OnInit, AfterViewInit {
     ) as HTMLCollectionOf<HTMLElement>;
 
     this.slideIndexRight++;
+
+    this.slideRightSize = slides.length;
+    this.currentSlideRight = this.slideIndexRight;
 
     if (this.slideIndexRight >= slides.length) {
       this.slideIndexRight = 0;

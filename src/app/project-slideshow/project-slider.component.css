@@ -6,8 +6,13 @@
 
 #project-name {
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--font-family-2);
   margin-bottom: -20px;
+}
+
+.slide-counter {
+  font-family: var(--font-family-2);
+  font-size: 14px;
 }
 
 .slides-container {

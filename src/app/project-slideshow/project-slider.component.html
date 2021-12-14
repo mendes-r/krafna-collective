@@ -12,6 +12,7 @@
       src="{{ image_left }}"
       (click)="showSlidesLeft()"
     />
+    <p class="slide-counter">{{currentSlideLeft}}/{{slideLeftSize}}</p>
   </div>
 
   <div class="slides-container s-right">
@@ -23,5 +24,6 @@
       src="{{ image_right }}"
       (click)="showSlidesRight()"
     />
+    <p class="slide-counter">{{currentSlideRight}}/{{slideRightSize}}</p>
   </div>
 </div>

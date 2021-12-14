@@ -17,4 +17,38 @@
   margin-left: 10px;
 }
 
+@media screen and (max-width:750px) {
+  .slide-wrapper {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
 
+  .s-left {
+    margin-right: 0;
+  }
+
+  .s-right {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:1125px) {
+  .slide-wrapper {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .s-left {
+    margin-right: 0;
+  }
+
+  .s-right {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}

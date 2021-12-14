@@ -1,5 +1,7 @@
 <div class="app-wrapper">
   <router-outlet></router-outlet>
+  <div id="back" *ngIf="this.router.url !== '/dashboard'">
+    <a routerLink="/dashboard"><</a></div>
   <div id="social">
     <a id="facebook">f</a> ----
     <a id="instagram">i</a> ----
@@ -14,4 +16,5 @@
   <div id="frame-r"><a routerLink="/news">News</a></div>
   <div id="frame-b"><a routerLink="/contact">Contact</a></div>
   <div id="frame-l"><a routerLink="/client">Client</a></div>
+  <div id="footer"></div>
 </div>

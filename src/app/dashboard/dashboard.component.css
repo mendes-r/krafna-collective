@@ -17,3 +17,23 @@
   transform: translate(-50%, -50%);
   font-size: 35px;
 }
+
+@media screen and (max-width:750px) {
+  .wrapper {
+    max-width: 400px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width:1125px) {
+  .wrapper {
+    width: 600px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width:1900px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

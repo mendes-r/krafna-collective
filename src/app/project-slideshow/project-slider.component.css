@@ -4,6 +4,12 @@
   display: flex;
 }
 
+#project-name {
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: -20px;
+}
+
 .slides-container {
   width: 100%;
   margin-top: 15px;
@@ -17,8 +23,9 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width:750px) {
-  .slide-wrapper {
+@media screen and (max-width: 750px) {
+  .slide-wrapper,
+  #project-name {
     max-width: 400px;
     display: block;
     margin: 0 auto;
@@ -35,8 +42,9 @@
   }
 }
 
-@media screen and (max-width:1125px) {
-  .slide-wrapper {
+@media screen and (max-width: 1125px) {
+  .slide-wrapper,
+  #project-name {
     max-width: 600px;
     display: block;
     margin: 0 auto;

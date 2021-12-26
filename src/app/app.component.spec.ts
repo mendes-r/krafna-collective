@@ -1,4 +1,3 @@
-import { Router, RouterModule } from '@angular/router';
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { By } from '@angular/platform-browser';

@@ -7,7 +7,7 @@
 }
 
 #hover-text {
-  background-color: rgba(255, 255, 0, 0.75);
+  color: black;
   border-radius: 7px;
   padding: 5px 20px;
   position: fixed;
@@ -16,6 +16,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 35px;
+  font-weight: bolder;
 }
 
 @media screen and (max-width:750px) {

@@ -4,11 +4,11 @@
 #
 # Project name: XX-PROJECT-NAME
 
-SOURCE='assets/images/'
+SOURCE='src/assets/images/'
 SLIDE='/slideshow/'
 LEFT='left'
 RIGTH='right'
-JSON="assets/projects.json"
+JSON="src/assets/projects.json"
 DESCRIPTION="description.txt"
 # All project's folders
 PROJECTS=($(ls $SOURCE))

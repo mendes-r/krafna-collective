@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../entity/project';
-import projects from '../../assets/projects.json'
+import projects from '../../assets/projects.json';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProjectService {
-
   data: Project[] = projects;
 
   constructor() {
@@ -14,7 +13,19 @@ export class ProjectService {
   }
 
   public getProject(id: string): Project {
-    return this.data.filter(elemente => elemente.id === id)[0];
+    let project: Project = this.data.filter(
+      (elemente) => elemente.id === id
+    )[0];
+    return project !== undefined
+      ? project
+      : {
+          id: '',
+          name: '',
+          description: '',
+          thumbnail: '',
+          left_slides: [],
+          right_slides: [],
+        };
   }
 
   public getPortfolio(): Project[] {
@@ -26,7 +37,7 @@ export class ProjectService {
    *
    * source: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
    */
-   private shuffleProjects() {
+  private shuffleProjects() {
     let dataSize: number = this.data.length;
     for (let i = dataSize - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));

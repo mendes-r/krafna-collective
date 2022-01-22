@@ -24,6 +24,6 @@
   </div>
 </div>
 
-<div id="frame-r">{{ project.name | titlecase }}</div>
+<div id="frame-r">{{ project.name.replace('-', ' ') | titlecase }}</div>
 
 <div id="frame-l">{{ project.description }}</div>

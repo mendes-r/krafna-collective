@@ -5,5 +5,5 @@
       [project]="project"
     ></app-project-panel>
   </div>
-  <div *ngIf="hoverProject" id="hover-text">{{ hoverProject }}</div>
+  <div *ngIf="hoverProject" id="hover-text">{{ hoverProject.replace('-', ' ') | titlecase }}</div>
 </div>

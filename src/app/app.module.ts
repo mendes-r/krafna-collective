@@ -8,8 +8,6 @@ import { ProjectSliderComponent } from './project-slideshow/project-slider.compo
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactComponent } from './frame-links/contact/contact.component';
-import { ClientComponent } from './frame-links/client/client.component';
-import { NewsComponent } from './frame-links/news/news.component';
 import { ProjectService } from './service/project.service';
 
 @NgModule({
@@ -19,8 +17,6 @@ import { ProjectService } from './service/project.service';
     ProjectSliderComponent,
     DashboardComponent,
     ContactComponent,
-    ClientComponent,
-    NewsComponent,
   ],
   imports: [BrowserModule, CommonModule, AppRoutingModule],
   providers: [ProjectService],

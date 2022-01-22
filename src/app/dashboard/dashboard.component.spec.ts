@@ -35,6 +35,18 @@ describe('AppDashboardComponent', () => {
     expect(projects.length).toEqual(3)
   })
 
+  it('should change value for the variable hoverProjects', () => {
+    // Given
+    const newHoverProject: string = "Bar";
+    component.hoverProject = "Foo";
+
+    // When
+    component.setHoverProject(newHoverProject)
+
+    // Then
+    expect(component.hoverProject).toEqual(newHoverProject);
+  })
+
   function getPortfolio(): Project[]{
     return [
       {

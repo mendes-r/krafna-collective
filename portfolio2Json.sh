@@ -22,14 +22,14 @@ projects () {
     "id": "$(echo $1 | cut -d - -f1)",
     "name": "$(echo $1 | cut -d - -f2-)",
     "description": "$(cat $SOURCE$1/$DESCRIPTION)",
-    "thumbnail": "$(find $SOURCE$1 -type f -depth 1 -name '*.jpg' -o -name '*.png' | head -n 1)",
+    "thumbnail": "$(find $SOURCE$1 -type f -depth 1 -name '*.jpg' -o -name '*.png' | head -n 1 | cut -d '/' -f 2-)",
 	_EOF_
 	return
 }
 
 slides () {
 	# All images inside the folder "slideshow"
-	SLIDES=($(find "$SOURCE$project$SLIDE$1" -type f -depth 1 -name '*.jpg' -o -name '*.png'))
+	SLIDES=($(find "$SOURCE$project$SLIDE$1" -type f -depth 1 -name '*.jpg' -o -name '*.png' | cut -d '/' -f 2-))
 	SLIDES_LENGTH=$(( ${#SLIDES[*]} - 1 ))
 	LAST_SLIDE=${SLIDES[$SLIDES_LENGTH]}
 

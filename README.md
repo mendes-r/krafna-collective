@@ -24,7 +24,7 @@ Run `ng test --code-coverage` to have a look on your code coverage.
 
 - ### Scripts
   
-When updating the project's resources in the folder [images](src/assets/images) run the [fileSysScan.sh](src/fileSysScan.sh) to update the [projects JSON file](src/assets/projects.json) that describes its content.
+When updating the project's resources in the folder [images](src/assets/images) run the [portfolio2Json.sh](portfolio2Json.sh) to update the [projects JSON file](src/assets/projects.json) that describes its content.
 
 ## Production
 

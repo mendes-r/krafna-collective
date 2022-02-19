@@ -22,7 +22,7 @@ projects () {
     "id": "$(echo $1 | cut -d - -f1)",
     "name": "$(echo $1 | cut -d - -f2-)",
     "description": "$(cat $SOURCE$1/$DESCRIPTION)",
-    "thumbnail": "$(find $SOURCE$1 -type f -depth 1 -name '*.jpg' -o -name '*.png' | head -n 1 | cut -d '/' -f 2-)",
+    "thumbnail": "$(find $SOURCE$1 -type f -maxdepth 1 -name '*.jpg' -o -name '*.png' | head -n 1 | cut -d '/' -f 2-)",
 	_EOF_
 	return
 }

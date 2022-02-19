@@ -1,5 +1,6 @@
 .slide-wrapper {
   width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
 }
@@ -48,7 +49,7 @@
 
 @media screen and (max-width: 750px) {
   .slide-wrapper {
-    max-width: 400px;
+    max-width: 300px;
     display: block;
     margin: 0 auto;
   }
@@ -66,7 +67,7 @@
 
 @media screen and (max-width: 1125px) {
   .slide-wrapper {
-    max-width: 600px;
+    max-width: 400px;
     display: block;
     margin: 0 auto;
   }

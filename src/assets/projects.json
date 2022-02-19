@@ -120,11 +120,25 @@
     "description": "2018 - Oliveira de Azeméis",
     "thumbnail": "assets/images/09-casa-l/krafna-architects-casa-nova.jpg",
     "left_slides": [
+      "assets/images/09-casa-l/slideshow/left/krafna-nova-04.jpg",
       "assets/images/09-casa-l/slideshow/left/krafna-nova-01.jpg"
     ],
     "right_slides": [
+      "assets/images/09-casa-l/slideshow/right/krafna-nova-05.jpg",
       "assets/images/09-casa-l/slideshow/right/krafna-nova-02.jpg",
       "assets/images/09-casa-l/slideshow/right/krafna-nova-03.jpg"
+    ]
+  },
+  {
+    "id": "10",
+    "name": "casa-achada",
+    "description": "2020 - Mafra",
+    "thumbnail": "assets/images/10-casa-achada/krafna-architects-casa-achada.jpg",
+    "left_slides": [
+      "assets/images/10-casa-achada/slideshow/left/krafna-achada-01.jpg"
+    ],
+    "right_slides": [
+      "assets/images/10-casa-achada/slideshow/right/krafna-achada-02.jpg"
     ]
   }
 ]

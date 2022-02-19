@@ -1,6 +1,6 @@
 .app-wrapper {
   width: 65vw;
-  min-width: 600px;
+  min-width: 400px;
   margin: auto;
   margin-top: calc(var(--frame-margin) + 50px);
 }
@@ -21,10 +21,7 @@ h6 {
 }
 
 #frame-t,
-#frame-r,
 #frame-b,
-#frame-l,
-#social,
 #back {
   position: fixed;
   text-align: center;
@@ -44,14 +41,14 @@ h6 {
   left: var(--frame-margin);
 }
 
-#facebook:hover,
+#pinterest:hover,
 #instagram:hover,
 #tumblr:hover {
   cursor: pointer;
 }
 
-#facebook:hover {
-  color: rgb(29, 161, 242);
+#pinterest:hover {
+  color: rgb(242, 29, 86);
 }
 
 #instagram:hover {
